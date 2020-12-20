@@ -8,9 +8,7 @@ Start Ganache development network, and deploy AKAP.sol from AKAP [contracts](htt
 
     $ configure environment varaible in app.properties [development|demo] 
 
-Make sure to update address as required within `src/main/web/contracts/AKAP.json`
-
-Start webpack dev server with gradle run task:
+Start embedded server with gradle run task:
 
     $ ./gradlew -t run
 
@@ -19,3 +17,10 @@ Start your browser at:
     $ http://localhost:8080/
 
 ![demo snippet](demo.jpeg)
+
+
+## Generating Contract Wrapper (Optional)
+
+The web3j [contract](https://github.com/mohamedelshami/url-shortener-web3j/tree/main/src/jvmMain/java/io/epirus/generated/contracts) wrappers can be generated using the following command:
+
+    $ epirus generate truffle generate —truffle-json URLShortener.json —outputDir src/main/java —package demo.urlshortener
