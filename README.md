@@ -18,3 +18,4 @@ Start your browser at:
 
     $ http://localhost:8080/
 
+![demo snippet](demo.jpeg)
